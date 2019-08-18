@@ -20,7 +20,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <Button
           onPress={this.showActionSheet}
-          title="Open Buttom ActionSheet"
+          title="Open Button ActionSheet"
         />
         <ActionSheet
           ref={o => (this.ActionSheet = o)}
@@ -42,3 +42,12 @@ export default class App extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 20,
+  },
+});
